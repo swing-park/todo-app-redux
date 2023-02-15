@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -8,11 +9,10 @@ const Container = styled.div`
   width: 100%;
   padding: 10px;
   margin: 20px 0px;
-
-  font-size: 3rem;
 `;
 
 const Text = styled.div`
+  font-size: 3rem;
   font-family: "Unbounded", cursive;
   background: linear-gradient(to right, blue, skyblue);
   color: transparent;
@@ -23,6 +23,7 @@ const Header = () => {
   return (
     <Container>
       <Text>Swing's TODOLIST</Text>
+      <Link to="/story">컴포넌트 모음집 보러가기</Link>
     </Container>
   );
 };
